@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLACK D - Luxury</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#000;color:#fff}
+header{padding:20px;text-align:center;border-bottom:1px solid #d4af37}
+header h1{font-size:32px;letter-spacing:8px;color:#d4af37}
+header p{font-size:12px;letter-spacing:3px;color:#888}
+.hero{padding:40px 20px;text-align:center;background:linear-gradient(180deg,#111,#000)}
+.hero h2{font-size:28px;line-height:1.2}
+.hero h2 span{color:#d4af37}
+.hero p{color:#aaa;margin:15px 0 25px}
+.btn{background:#d4af37;color:#000;padding:14px 30px;border:none;border-radius:30px;font-weight:bold;font-size:16px;width:100%}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:20px}
+.card{background:#111;border:1px solid #222;border-radius:15px;padding:15px;text-align:center}
+.card .img{font-size:40px;margin-bottom:10px}
+.card h3{font-size:15px}
+.card p{color:#d4af37;font-weight:bold;margin:8px 0}
+.card button{background:#fff;color:#000;border:none;padding:8px 15px;border-radius:20px;font-weight:bold;width:100%}
+.vip{margin:20px;background:#d4af37;color:#000;border-radius:15px;padding:20px;text-align:center}
+.vip button{background:#000;color:#d4af37;border:none;padding:12px 25px;border-radius:25px;margin-top:12px;font-weight:bold}
+footer{text-align:center;padding:20px;color:#555;font-size:12px}
+</style>
+</head>
+<body>
+<header><h1>BLACK D</h1><p>LUXURY • DUBAI • UAE</p></header>
+<div class="hero">
+<h2>Own The Night.<br><span>Live Luxury.</span></h2>
+<p>Exclusive Watches, Perfumes & Lifestyle - Only For Members.</p>
+<button class="btn" onclick="join()">JOIN VIP CLUB →</button>
+</div>
+<div class="grid">
+<div class="card"><div class="img">⌚</div><h3>Black D Watch</h3><p>1,499 AED</p><button onclick="buy('Black D Watch')">Add To Cart</button></div>
+<div class="card"><div class="img">💎</div><h3>Royal Perfume</h3><p>899 AED</p><button onclick="buy('Royal Perfume')">Add To Cart</button></div>
+<div class="card"><div class="img">🕶️</div><h3>Gold Shades</h3><p>649 AED</p><button onclick="buy('Gold Shades')">Add To Cart</button></div>
+<div class="card"><div class="img">👟</div><h3>Luxury Sneaker</h3><p>1,199 AED</p><button onclick="buy('Luxury Sneaker')">Add To Cart</button></div>
+</div>
+<div class="vip"><h3>👑 BLACK D VIP</h3><p>Get 20% Off + Free Delivery in Dubai</p><button onclick="join()">Become VIP - 99 AED / Month</button></div>
+<footer>© 2026 BLACK D - Made in Dubai</footer>
+<script>
+function buy(item){alert(item+" Added To Cart 🛒\nWelcome To Luxury Life!");}
+function join(){let name=prompt("Apna Naam Likho:");if(name) alert("Welcome "+name+" 👑\nTu hun BLACK D VIP Member aa!");}
+</script>
+</body>
+</html>
